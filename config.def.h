@@ -20,9 +20,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 
 /* tagging */
 static const char *tags[] = {
-	"code",
-	"web",
-	"clean",
+	"1",
+	"2",
+	"3",
+  "4",
 };
 
 static const Rule rules[] = {
@@ -41,9 +42,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "][",       tile },    /* first entry is default */
-	{ ")(",       NULL },    /* no layout function means floating behavior */
-	{ "}{",       monocle },
+	{ "[=]",     tile },    /* first entry is default */
+	{ "><>",     NULL },    /* no layout function means floating behavior */
+	{ "[M]",     monocle },
 };
 
 /* key definitions */
@@ -90,6 +91,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
+  TAGKEYS(                        XK_4,                      3)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
